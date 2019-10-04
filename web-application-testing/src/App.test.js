@@ -1,9 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from ' ';
+import DashBoard from './Components/Dashboard';
+import Display from './Components/Display'
 import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+
+test('renders without crashing', () => {
+  render(<App />);
 });
+
+test('renders without crashing', () => {
+  render(<DashBoard />);
+});
+
+test('renders without crashing', () => {
+  render(<Display />);
+});
+
